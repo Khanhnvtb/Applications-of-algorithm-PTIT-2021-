@@ -2,6 +2,52 @@
 // Created by khanh on 10/9/2021.
 //
 
+/*
+ĐỒ THỊ HAI PHÍA
+
+Bài làm tốt nhất
+Đồ thị hai phía là một đồ thị đặc biệt, trong đó tập các đỉnh có thể được chia thành hai tập không giao nhau thỏa mãn điều kiện không có cạnh nối hai đỉnh bất kỳ thuộc cùng một tập. Cho đồ thị N đỉnh và M cạnh, bạn hãy kiểm tra đồ thị đã cho có phải là một đồ thị hai phía hay không?
+
+ 
+
+Input:
+
+Dòng đầu tiên là số lượng bộ test T (T ≤  20).
+Mỗi test bắt đầu bởi số nguyên N và M (1 ≤  N, M ≤  1000).
+M dòng tiếp theo, mỗi dòng gồm 2 số nguyên u, v cho biết có cạnh nối giữa đỉnh u và v.
+Output: 
+
+Với mỗi test, in ra “YES” nếu đồ thị đã cho là một đồ thị hai phía, in ra “NO” trong trường hợp ngược lại.
+Ví dụ:
+
+Input:
+
+2
+
+5 4
+
+1 5
+
+1 3
+
+2 3
+
+4 5
+
+3 3
+
+1 2
+
+1 3
+
+2 3
+
+Output
+
+YES
+
+NO
+*/
 #include <bits/stdc++.h>
 
 using namespace std;

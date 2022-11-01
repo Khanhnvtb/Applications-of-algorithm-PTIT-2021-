@@ -2,6 +2,45 @@
 // Created by khanh on 10/9/2021.
 //
 
+/*
+CHÚ CỪU XA CÁCH
+
+Bài làm tốt nhất
+Trên cánh đồng kích thước N x N có K chú cừu. Người nông dân sợ các chú cừu đi lạc nên đã làm một số rào chắn giữa các khu vực. Các chú cừu chỉ có thể di chuyển lên trên, xuống dưới, sang trái, sang phải khu vực bên cạnh, và không thể vượt qua được hàng rào.
+
+Hai chú cừu A và B được gọi là ‘xa cách’ nếu như chúng không thể di chuyển tới vị trí của nhau. Các bạn hãy xác định xem số cặp chú cừu xa cách bằng nhau nhiêu?
+
+Input:  Dòng đầu tiên gồm 3 số nguyên dương N, K và M (1 ≤  N ≤  100, K ≤  100, M ≤  N^2).  M dòng tiếp theo, mỗi dòng gồm 4 số nguyên u, v, x, y cho biết có rào chắn ở giữa hai khu vực (u, v) và (x, y) (2 ô này cạnh nhau). K dòng cuối, mỗi dòng chứa 2 số nguyên là tọa độ của mỗi chú cừu.
+
+Output: In ra số cặp chú cừu bị xa cách tìm được.
+
+ 
+
+Ví dụ:
+
+Input
+
+3 3 3
+
+2 2 2 3
+
+3 3 3 2
+
+3 3 2 3
+
+3 3
+
+2 2
+
+2 3
+
+2
+
+Output
+
+Giải thích test: Cặp (3, 1) và (2, 1).
+*/
+
 #include <bits/stdc++.h>
 
 using namespace std;

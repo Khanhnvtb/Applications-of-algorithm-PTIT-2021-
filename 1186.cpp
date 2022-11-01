@@ -1,7 +1,6 @@
 //
 // Created by khanh on 10/8/2021.
 //
-#include <bits/stdc++.h>
 
 /*
 TÌM ĐƯỜNG Đi THEO BFS TRÊN ĐỒ THỊ CÓ HƯỚNG
@@ -31,6 +30,8 @@ Output:
 
 1 2 5 6
 */
+
+#include <bits/stdc++.h>
 using namespace std;
 
 int v, e, start, dist, vs[1005], previous[1005];

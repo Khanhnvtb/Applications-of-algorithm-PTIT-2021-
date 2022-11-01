@@ -15,6 +15,7 @@ Output:
       Ví dụ:
 
 Input:
+
 1
 
 6 9 5

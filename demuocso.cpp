@@ -2,6 +2,41 @@
 // Created by Nguyen Van Khanh on 10/31/2021.
 //
 
+/*
+ĐẾM ƯỚC SỐ
+
+Bài làm tốt nhất
+Cho hai số nguyên dương n và k. Hãy đếm số ước số khác nhau của tổ hợp chập k của n phần tử.
+
+Input:
+
+Dữ liệu vào gồm nhiều dòng, mỗi dòng ghi hai số nguyên dương n và k (0 ≤ k ≤ n ≤ 431). (chú ý: không có dòng ghi số bộ test, cần tự đọc đến hết các dòng của luồng vào).
+
+Output:
+
+Ghi ra kết quả trên một dòng. Dữ liệu vào đảm bảo kết quả không vượt quá 263 – 1.
+
+Ví dụ:
+
+Input
+
+5 1
+
+6 3
+
+10 4
+
+Output
+
+2
+
+6
+
+16
+*/
+
+// s = a^n * b^m * ... * k^z có số ước là (n + 1) * (m + 1) * ... * (z + 1)
+
 #include <bits/stdc++.h>
 
 using namespace std;

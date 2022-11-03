@@ -75,11 +75,11 @@ void solve() {
     for (int i = 2; i < 435; i++) {
         if (divide[i] > 0) ans *= (divide[i] + 1);
     }
-    cout << ans << endl;
+    printf("%lld\n", ans);
 }
 
 void input() {
-    while (cin >> n >> k) {
+    while (scanf("%d %d", &n, &k)) {
         solve();
     }
 }

@@ -79,7 +79,7 @@ void solve() {
 }
 
 void input() {
-    while (scanf("%d %d", &n, &k)) {
+    while (cin >> n >> k) {
         solve();
     }
 }

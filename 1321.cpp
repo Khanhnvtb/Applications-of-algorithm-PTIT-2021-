@@ -51,7 +51,8 @@ int cmp(data x, data y) {
 
 void input() {
     scanf("%d", &n);
-    for (int i = 0; i < n; i++) scanf("%d", &a[i].s, &a[i].e);
+    for (int i = 0; i < n; i++) scanf("%d", &a[i].s);
+    for (int i = 0; i < n; i++) scanf("%d", &a[i].e);
 }
 
 void solve() {

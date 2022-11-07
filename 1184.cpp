@@ -66,11 +66,11 @@ void solve() {
         vs[i] = 0;
     }
     dfs(start);
-    if (previous[dist]) {
+    if (previous[dest]) {
         stack<int> s;
-        while (dist != 0) {
+        while (dest != 0) {
             s.push(dest);
-            dist = previous[dest];
+            dest = previous[dest];
         }
         while (!s.empty()) {
             printf("%d ", s.top());

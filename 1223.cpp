@@ -2,6 +2,59 @@
 // Created by khanh on 10/9/2021.
 //
 
+/*
+ĐƯỜNG ĐI TRUNG BÌNH
+Cho một đồ thị có hướng gồm N đỉnh và M cạnh. Nhiệm vụ của bạn là hãy tính khoảng cách trung bình ngắn nhất giữa hai nút bất kì nếu như chúng liên thông với nhau. Input đảm bảo rằng trong một nhóm liên thông, nếu như u đi tới được v thì v cũng đi tới được v với mọi cặp u, v.
+
+Input:Dòng đầu tiên là số lượng bộ test T (T ≤ 20). Mỗi test bắt đầu bởi hai số nguyên N và M (1 ≤ N ≤ 100, M ≤ N*(N-1)/2). M dòng tiếp theo, mỗi dòng gồm 2 số nguyên u, v cho biết có cạnh nối đơn hướng từ u tới v.
+
+Output:  Với mỗi test, in ra đáp án tìm được với độ chính xác 2 chữ số sau dấu phảy.
+
+Ví dụ:
+
+Input:
+
+Output
+
+2
+
+4 5
+
+1 2
+
+2 4
+
+1 3
+
+3 1
+
+4 3
+
+7 5
+
+1 2
+
+1 4
+
+4 2
+
+2 7
+
+7 1
+
+1.83
+
+1.75
+
+Giải thích test 1: Ta có
+
+d(1, 2) = 1, d(1, 3) = 1, d(1, 4) = 2; d (2, 1) = 3, d(2, 3) = 2, d(2, 4) = 1;
+
+d(3, 1) = 1, d(3, 2) = 2, d(3, 4) = 3; d(4, 1) = 2, d(4, 2) = 3, d(4, 3) = 1.
+
+Trung bình bằng 22/12 = 1.83
+*/
+
 #include <bits/stdc++.h>
 
 using namespace std;

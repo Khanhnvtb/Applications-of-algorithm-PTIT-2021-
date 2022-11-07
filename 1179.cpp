@@ -50,7 +50,7 @@ int v, e, first, vs[1005];
 vector<int> adj[1005];
 
 void input() {
-    cin >> v >> e >> first;
+    scanf("%d %d %d", &v, &e, &first);
     int i, j;
     while (e--) {
         cin >> i >> j;
@@ -60,7 +60,7 @@ void input() {
 }
 
 void dfs(int u) {
-    cout << u << " ";
+    printf("%d ", u);
     vs[u] = 1;
     for (int i = 0; i < adj[u].size(); i++) {
         int tmp = adj[u][i];
@@ -71,13 +71,13 @@ void dfs(int u) {
 void solve() {
     for (int i = 1; i <= v; i++) vs[i] = 0;
     dfs(first);
-    cout << endl;
+    printf("\n");
     for (int i = 1; i <= v; i++) adj[i].clear();
 }
 
 int main() {
     int t;
-    cin >> t;
+    scanf("%d", &t);
     while (t--) {
         input();
         solve();

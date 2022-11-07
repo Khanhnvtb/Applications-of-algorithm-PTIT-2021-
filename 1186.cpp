@@ -32,13 +32,14 @@ Output:
 */
 
 #include <bits/stdc++.h>
+
 using namespace std;
 
-int v, e, start, dist, vs[1005], previous[1005];
+int v, e, start, dest, vs[1005], previous[1005];
 vector<int> adj[1005];
 
 void input() {
-    scanf("%d %d %d %d", &v, &e, &start, &dist);
+    scanf("%d %d %d %d", &v, &e, &start, &dest);
     int i, j;
     while (e--) {
         scanf("%d %d", &i, &j);
@@ -57,7 +58,7 @@ void bfs(int u) {
             if (!vs[tmp]) {
                 previous[tmp] = u;
                 vs[tmp] = 1;
-                if (tmp == dist) return;
+                if (tmp == dest) return;
                 q.push(tmp);
             }
         }
@@ -70,11 +71,11 @@ void solve() {
         vs[i] = 0;
     }
     bfs(start);
-    if (previous[dist]) {
+    if (previous[dest]) {
         stack<int> s;
-        while (dist != 0) {
-            s.push(dist);
-            dist = previous[dist];
+        while (dest != 0) {
+            s.push(dest);
+            dest = previous[dest];
         }
         while (!s.empty()) {
             printf("%d ", s.top());

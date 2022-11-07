@@ -1,7 +1,6 @@
 //
 // Created by khanh on 10/8/2021.
 //
-#include <bits/stdc++.h>
 
 /*
 KIỂM TRA CHU TRÌNH
@@ -32,6 +31,7 @@ Output:
 YES
 */
 
+#include <bits/stdc++.h>
 using namespace std;
 
 int v, e, state, previos[1005];

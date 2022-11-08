@@ -35,34 +35,29 @@ Output
 
 using namespace std;
 
-int dp[1005][1005][1005];
-string a;
+int n, dp[105][105]; //mảng dp lưu trữ giá trị dãy con lặp lại dài nhất với độ dài 2 xâu con là i và j
+string str;
 
-void input() {
+void init() { //hàm khởi tạo
     scanf("%d", &n);
-    cin >> a >> b >> c;
+    cin >> str;
 }
 
-void solve() {
-    a = ' ' + a;
-    b = ' ' + b;
-    c = ' ' + c;
-    for (int i = 0; i <a.length(); i++) dp[i][0][0] = 0;
-    for (int i = 0; i <b.length(); i++) dp[0][i][0] = 0;
-    for (int i = 1; i <= n; i++)
-        for (int j = 1; j <= n; j++) {
-            if (i != j && a[i] == a[j]) dp[i][j] = dp[i - 1][j - 1] + 1;
+void solve() { //hàm xử lý
+    for (int i = 0; i <= n; i++)
+        for (int j = 0; j <= n; j++) {
+            if (i == 0 || j == 0) dp[i][j] = 0; //dãy lặp dài nhất của xâu rỗng là 0
+            else if (str[i - 1] == str[j - 1] && i != j) dp[i][j] = dp[i - 1][j - 1] + 1; //cập nhật kết quả
             else dp[i][j] = max(dp[i - 1][j], dp[i][j - 1]);
-            res = max(res, dp[i][j]);
         }
-    printf("%d\n", res);
+    printf("%d\n", dp[n][n]); //đưa ra kết quả
 }
 
 int main() {
     int t;
     scanf("%d", &t);
     while (t--) {
-        input();
+        init();
         solve();
     }
     return 0;

@@ -2,6 +2,40 @@
 // Created by Nguyen Van Khanh on 10/29/2021.
 //
 
+/*
+DUYỆT CÂY 5
+
+Cho cây nhị phân, nhiệm vụ của bạn là duyệt cây theo xoắn ốc (spiral-order). Phép. Ví dụ với cây dưới đây sẽ cho ta kết quả của phép duyệt spiral-order: 1 2 3  4 5 6 7.
+
+ 
+
+spiral_order
+
+Input:
+
+Dòng đầu tiên đưa vào số lượng test T.
+Những dòng tiếp theo đưa vào các bộ test. Mỗi bộ test gồm 2 dòng: dòng đầu tiên đưa vào số N là số lượng cạnh của cây; dòng tiếp theo đưa vào N bộ ba (u, v, x), trong đó u là node cha, v là node con, x= R nếu v là con phải, x=L nếu v là con trái; u, v, x được viết cách nhau một vài khoảng trống.
+T, N, u, v, thỏa mãn ràng buộc: 1≤T≤100; 1≤N≤103; 1≤u, v≤104;
+Output:
+
+Đưa ra kết quả phép duyệt level-order theo từng dòng.
+     Ví dụ:
+
+Input
+
+2
+2
+1 2 R 1 3 L
+4
+10 20 L 10 30 R 20 40 L 20 60 R
+
+Output
+
+1 3 2
+
+10 0 30 60 40
+*/
+
 #include <bits/stdc++.h>
 
 using namespace std;

@@ -2,6 +2,39 @@
 // Created by Khanh Nguyen Van on 10/15/2021.
 //
 
+/*
+CÂY NHỊ PHÂN BẰNG NHAU
+
+Cho hai cây nhị phân, nhiệm vụ của bạn là kiểm tra xem cây nhị phân có giống nhau hay không?
+
+    Input:
+
+Dòng đầu tiên đưa vào số lượng test T.
+Những dòng tiếp theo đưa vào các bộ test. Mỗi bộ test gồm 3 dòng: dòng đầu tiên đưa vào số N là số lượng cạnh của cây; dòng tiếp theo đưa vào N bộ ba (u, v, x), trong đó u là node cha, v là node con, x= R nếu v là con phải, x=L nếu v là con trái của mỗi cây; u, v, x được viết cách nhau một vài khoảng trống.
+T, N, u, v, thỏa mãn ràng buộc: 1≤T≤100; 1≤N≤103; 1≤u, v≤104;
+Output:
+
+Đưa ra kết quả mỗi test theo từng dòng.
+      Ví dụ:
+
+Input
+
+2
+2
+1 2 L 1 3 R
+2
+1 2 L 1 3 R
+2
+1 2 L 1 3 R
+2
+1 3 L 1 2 R
+
+Output
+
+1
+0
+*/
+
 #include <bits/stdc++.h>
 
 using namespace std;
@@ -65,4 +98,5 @@ int main() {
         }
         printf("%d\n", indenticalTree(rootA, rootB));
     }
+    return 0;
 }

@@ -2,6 +2,33 @@
 // Created by khanh on 10/12/2021.
 //
 
+/*
+BÀI 7. CON ẾCH
+
+Một con ếch có thể nhảy 1, 2, 3 bước để có thể lên đến một đỉnh cần đến. Hãy đếm số các cách con ếch có thể nhảy đến đỉnh.
+
+Input:
+
+Dòng đầu tiên đưa vào số lượng bộ test T.
+Những dòng kế tiếp đưa vào các bộ test. Mỗi bộ test là số n là số bước con ếch có thể lên được đỉnh.
+T, n thỏa mãn ràng buộc: 1≤T≤100;  1≤n ≤50.
+Output:
+
+Đưa ra kết quả mỗi test theo từng dòng.
+Ví dụ:
+
+Input
+
+2
+1
+5
+
+Output
+
+1
+13
+*/
+
 #include <bits/stdc++.h>
 
 using namespace std;

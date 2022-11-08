@@ -2,6 +2,39 @@
 // Created by khanh on 10/11/2021.
 //
 
+/*
+DÃY CON CHUNG DÀI NHẤT CỦA BA XÂU
+Cho ba xâu ký tự X, Y, Z. Nhiệm vụ của bạn là tìm độ dài dãy con chung dài nhất có mặt trong cả ba xâu.
+
+Input:
+
+Dòng đầu tiên đưa vào số lượng bộ test T.
+Những dòng kế tiếp đưa vào các bộ test. Mỗi bộ test gồm hai dòng: dòng đầu tiên đưa vào độ dài xâu X, Y, X; dòng tiếp theo đưa vào ba xâu X, Y, Z.
+T, X, Y, Z thỏa mãn ràng buộc: 1 ≤ T ≤ 100;  1 ≤ size(X), size(Y), size(Z) ≤ 100.
+Output:
+
+Đưa ra kết quả mỗi test theo từng dòng.
+Ví dụ:
+
+Input
+
+2
+
+5 8 13
+
+geeks geeksfor geeksforgeeks
+
+7 6 5
+
+abcd1e2 bc12ea bd1ea
+
+Output
+
+5
+
+3
+*/
+
 #include <bits/stdc++.h>
 
 using namespace std;

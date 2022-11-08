@@ -2,6 +2,35 @@
 // Created by Khanh Nguyen Van on 10/15/2021.
 //
 
+/*
+CÂY NHỊ PHÂN ĐỦ
+
+Cho cây nhị phân, nhiệm vụ của bạn là kiểm tra xem cây nhị phân có phải là một cây đủ hay không (full binary tree)? Một cây nhị phân được gọi là cây đủ nếu tất cả các node trung gian của nó đều có hai node con.
+
+      Input:
+
+Dòng đầu tiên đưa vào số lượng test T.
+Những dòng tiếp theo đưa vào các bộ test. Mỗi bộ test gồm 2 dòng: dòng đầu tiên đưa vào số N là số lượng cạnh của cây; dòng tiếp theo đưa vào N bộ ba (u, v, x), trong đó u là node cha, v là node con, x= R nếu v là con phải, x=L nếu v là con trái; u, v, x được viết cách nhau một vài khoảng trống.
+T, N, u, v, thỏa mãn ràng buộc: 1≤T≤100; 1≤N≤103; 1≤u, v≤104;
+Output:
+
+Đưa ra kết quả mỗi test theo từng dòng.
+     Ví dụ:
+
+Input
+
+2
+4
+1 2 L 1 3 R 2 4 L 2 5 R
+3
+1 2 L 1 3 R 2 4 L
+
+Output
+
+1
+0
+*/
+
 #include <bits/stdc++.h>
 
 using namespace std;

@@ -1,9 +1,38 @@
+//
+// Created by Khanh Nguyen Van on 10/15/2021.
+//
+
+/*
+TỔNG LỚN NHẤT
+Cho cây nhị phân có giá trị mỗi node là một số, nhiệm vụ của bạn là tìm tổng lớn nhất từ một node lá này sang một node lá khác? Ví dụ với cây dưới đây ta có tổng lớn nhất là 27.
+
+tree
+
+     Input:
+
+Dòng đầu tiên đưa vào số lượng test T.
+Những dòng tiếp theo đưa vào các bộ test. Mỗi bộ test gồm 3 dòng: dòng đầu tiên đưa vào số N là số lượng cạnh của cây; dòng tiếp theo đưa vào N bộ ba (u, v, x), trong đó u là node cha, v là node con, x= R nếu v là con phải, x=L nếu v là con trái; u, v, x được viết cách nhau một vài khoảng trống.
+T, N, u, v, thỏa mãn ràng buộc: 1≤T≤100; 1≤N≤103; 1≤u, v≤104;
+Output:
+
+Đưa ra kết quả mỗi test theo từng dòng.
+      Ví dụ:
+
+Input
+
+1
+12
+-15 5 L -15 6 R 5 -8 L 5 1 R -8 2 L -8 -3 R 6 3 L 6 9 R 9 0 R 0 4 L 0 -1 R -1 10 L
+
+Output
+
+27
+*/
 
 #include <bits/stdc++.h>
 using namespace std;
 
 int n;
-
 
 struct Node { //kiểu dữ liệu cây
     int data;
@@ -50,20 +79,20 @@ long long maxPathSum(Node *root) { //hàm tìm tổng đường đi lớn nhất
 
 int main() {
     int t;
-    cin >> t;
+    scanf("%d", &t);
     while (t--) {
-        cin >> n;
+        scanf("%d", &n);
         int a, b;
         char c;
         Node *root = NULL;
         while (n--) {
-            cin >> a >> b >> c;
+            scanf("%d %d %c", &a, &b, &c);
             if (!root) { //tạo cây
                 root = new Node (a);
                 makeNode (root, b, c);
             } else findNode (root, a, b, c);
         }
-        cout << maxPathSum (root) << endl; //đưa ra kết quả
+        printf("%lld\n", maxPathSum(root)); //đưa ra kết quả
     }
     return 0;
 }

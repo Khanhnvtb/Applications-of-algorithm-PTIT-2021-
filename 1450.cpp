@@ -1,3 +1,39 @@
+//
+// Created by Nguyen Van Khanh on 11/2/2021.
+//
+
+/*
+BÀI 1. XÂU CON CHUNG DÀI NHẤT
+
+Cho 2 xâu S1 và S2. Hãy tìm xâu con chung dài nhất của 2 xâu này (các phần tử không nhất thiết phải liên tiếp nhau).
+
+Input: Dòng đầu tiên là số lượng bộ test T (T ≤ 20). Mỗi test gồm hai dòng, mô tả xâu S1 và S2, mỗi xâu có độ dài không quá 1000 và chỉ gồm các chữ cái in hoa.
+
+Output:  Với mỗi test, in ra độ dài dãy con chung dài nhất trên một dòng.
+
+Ví dụ:
+
+Input
+
+2
+
+AGGTAB
+
+GXTXAYB
+
+AA
+
+BB
+
+Output
+
+4
+
+0
+
+Giải thích test 1: Dãy con chung là G, T, A, B.
+*/
+
 #include <bits/stdc++.h>
 
 using namespace std;

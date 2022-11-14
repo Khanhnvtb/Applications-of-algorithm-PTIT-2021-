@@ -15,17 +15,15 @@ Output:
 Đưa ra kết quả mỗi test theo từng dòng.
 Ví dụ:
 
- 
-
 Input
-
-Output
 
 1
 
 8 TOON  PLEA
 
 POON TOON PLEE SAME  POIE  PLEA  PLIE  POIN
+
+Output
 
 7
 */

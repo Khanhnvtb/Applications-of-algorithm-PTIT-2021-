@@ -36,7 +36,7 @@ Output
 
 using namespace std;
 
-int v, n, a[1005], c[1005], dp[1005][105];
+int v, n, a[1005], c[1005], dp[1005][1005];
 
 void input() {
     scanf("%d %d", &n, &v);

@@ -2,6 +2,34 @@
 // Created by Nguyen Van Khanh on 10/22/2021.
 //
 
+/*
+BÀI 13. KHOẢNG CÁCH XÂU KÝ TỰ
+Cho tập n xâu ký tự S và hai xâu s, t Î S. Ta giả thiết các xâu ký tự S[i] Î S có độ dài bằng nhau.  Hãy tìm khoảng cách đường đi ngắn nhất từ s đến t. Biết từ một xâu ký tự bất kỳ ta chỉ được phép dịch chuyển đến xâu khác với nó duy nhất 1 ký tự. Ví dụ ta có tập các từ S = { POON, TOON, PLEE, SAME, POIE, PLEA, PLIE, POIN }, s = TOON, t = PLEA ta có độ dài đường đi ngắn nhất là 7 tương ứng với các phép dịch chuyển : TOON -> POON –> POIN –> POIE –> PLIE –> PLEE –> PLEA.
+
+Input:
+
+Dòng đầu tiên đưa vào số lượng test T (T≤100).
+Mỗi test được tổ chức thành 2 dòng. Dòng thứ nhất ghi lại n là số từ trong S và hai từ s, t.  Dòng thứ 2 đưa vào n xâu xâu ký tự của S; các xâu ký tự được viết cách nhau một vài khoảng trống, có độ dài không vượt quá 10 kí tự.
+Output:
+
+Đưa ra kết quả mỗi test theo từng dòng.
+Ví dụ:
+
+ 
+
+Input
+
+Output
+
+1
+
+8 TOON  PLEA
+
+POON TOON PLEE SAME  POIE  PLEA  PLIE  POIN
+
+7
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 

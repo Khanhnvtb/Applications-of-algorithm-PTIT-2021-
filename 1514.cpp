@@ -5,7 +5,6 @@
 /*
 SỬA LẠI DÃY NGOẶC
 
-Bài làm tốt nhất
 Cho một xâu chỉ gồm các kí tự ‘(‘, ‘) và có độ dài chẵn. Hãy đếm số lượng dấu ngoặc cần phải đổi chiều ít nhất, sao cho xâu mới thu được là một dãy ngoặc đúng.
 
 Input:

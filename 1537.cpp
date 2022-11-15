@@ -2,6 +2,62 @@
 // Created by Nguyen Van Khanh on 11/2/2021.
 //
 
+/*
+TÌM ĐƯỜNG
+Cho một bảng S[][] kích thước N x M, bao gồm các ô trống, các vật cản. Ban đầu bạn ở vị trí S. Nhiệm vụ của bạn là hãy di chuyển tới vị trí T, sao cho số lần đổi hướng không quá hai lần.
+
+Input:
+
+Dòng đầu tiên là số lượng bộ test T (T <= 20).
+
+Mỗi test bắt đầu bởi hai số nguyên N và M (1 <= N, M <= 500).
+
+N dòng tiếp theo, mỗi dòng gồm M kí tự mô tả bảng S. Trong đó: ‘.’ là một ô trống, ‘*’ là vật cản, ‘S’ là vị trí xuất phát và ‘T’ là vị trí đích. (Chỉ có một vị trí S và T duy nhất).
+
+Output: 
+
+Với mỗi test, in ra “YES” nếu tìm được đường đi, ra in “NO” trong trường hợp ngược lại.
+
+Test ví dụ:
+
+Input:
+
+Output
+
+2
+
+5 5
+
+..S..
+
+****.
+
+T....
+
+****.
+
+.....
+
+5 5
+
+S....
+
+****.
+
+.....
+
+.****
+
+..T..
+
+ 
+
+YES
+
+NO
+
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 int n, m, start_row, start_col, dest_row, dest_col, vs[505][505];

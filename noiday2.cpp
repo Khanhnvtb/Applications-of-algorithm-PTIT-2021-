@@ -28,42 +28,58 @@ Output
 59
 */
 
+//Bộ test bài này bị sai
+
 #include <bits/stdc++.h>
 
 using namespace std;
 
-long n, res, m = 1e9 + 7;
-priority_queue<long, vector<long>, greater<long> > q;
+long long res, m = 1e9 + 7;
+
+int n;
+
+struct data {
+    long long natural, remainder;
+
+    bool operator()(data x, data y) {
+        if (x.natural > y.natural) return true;
+        if (x.natural == y.natural && x.remainder > y.remainder) return true;
+        return false;
+    }
+};
+
+priority_queue<data, vector<data>, data> q;
 
 void input() {
-    scanf("%ld", &n);
-    long x;
-    for (long i = 0; i < n; i++) {
-        scanf("%ld", &x);
-        q.push(x);
+    scanf("%d", &n);
+    long long x;
+    for (int i = 0; i < n; i++) {
+        scanf("%lld", &x);
+        data tmp;
+        tmp.natural = x / m;
+        tmp.remainder = x % m;
+        q.push(tmp);
     }
 }
 
 void solve() {
     res = 0;
     while (q.size() > 1) {
-        long x = q.top();
+        data x = q.top();
         q.pop();
-        long y = q.top();
+        data y = q.top();
         q.pop();
-        long z = x + y;
-        q.push(z % m);
-        res = (res + z) % m;
+        data z;
+        z.natural = x.natural + y.natural + (x.remainder + y.remainder) / m;
+        z.remainder = (x.remainder + y.remainder) % m;
+        q.push(z);
+        res = (res + z.remainder) % m;
     }
-    printf("%ld", res);
+    printf("%lld", res);
 }
 
 int main() {
-    int t;
-    scanf("%d", &t);
-    while (t--) {
-        input();
-        solve();
-    }
+    input();
+    solve();
     return 0;
 }

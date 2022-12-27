@@ -2,6 +2,33 @@
 // Created by Nguyen Van Khanh on 10/30/2021.
 //
 
+/*
+Cho hai số nguyên dương A và B. Tìm số N nhỏ nhất thỏa mãn: A là tổng các chữ số của N, B là tổng bình phương các chữ số của N. Nếu không tồn tại N thỏa mãn A và B hãy đưa ra -1. Giả thiết N có không quá 100 chữ số.
+
+Ví dụ với A = 18, B = 162 ta tìm được số nhỏ nhất N=99 vì 9+9=18 và 92 + 92 = 162. Với A = 12, B = 9 ta có kết quả  là -1.
+
+Input:
+
+Dòng đầu tiên đưa vào số lượng bộ test T.
+Những dòng kế tiếp đưa vào các bộ test. Mỗi bộ test là cặp số A, B được viết trên một dòng.
+T, A, B thỏa mãn ràng buộc: 1≤T≤100;  1≤A≤100; 1≤B≤10000.
+Output:
+
+Đưa ra kết quả mỗi test theo từng dòng.
+Ví dụ:
+
+Input
+
+2
+18  162
+12  9
+
+Output
+
+99
+-1
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 
